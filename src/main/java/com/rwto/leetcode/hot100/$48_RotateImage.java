@@ -3,11 +3,9 @@ import com.rwto.leetcode.utils.ListNode;
 
 import java.util.Arrays;
 import java.util.List;
-//You are given an n x n 2D matrix representing an image, rotate the image by 90
-// degrees (clockwise). 
+//给定一个 n × n 的二维矩阵 matrix 表示一个图像。请你将图像顺时针旋转 90 度。
 //
-// You have to rotate the image in-place, which means you have to modify the inp
-//ut 2D matrix directly. DO NOT allocate another 2D matrix and do the rotation. 
+//        你必须在 原地 旋转图像，这意味着你需要直接修改输入的二维矩阵。请不要 使用另一个矩阵来旋转图像。
 //
 // 
 // Example 1: 
@@ -40,6 +38,8 @@ import java.util.List;
     @date: 2024-01-12 14:50:48
     @title: Rotate Image
     @questionId: 48
+    1. 辅助数组： [a][b] -> [b][n-a-1]
+    2. 先对折，再对角线对折
 **/
 public class  $48_RotateImage {
     public static void main(String[] args) {
@@ -58,24 +58,20 @@ class Solution {
         if(null == matrix || matrix.length == 0){
             throw new IllegalArgumentException();
         }
-        //考虑单个元素
-        int n = matrix.length;//行,列
-        for(int k = 0; k < n/2; k++){
-            //旋转层数
-            for(int i = k; i < n - k - 1; i++){
-                //旋转
-                int tmp1 = matrix[i][n-k-1];
-                matrix[i][n-k-1] = matrix[k][i];
+        int[][] newMatrix = new int[matrix.length][matrix[0].length];
 
-                int tmp2 = matrix[n-k-1][n-k-1-i];
-                matrix[n-k-1][n-k-1-i] = tmp1;
-
-                tmp1 = matrix[n-k-1-i][k];
-                matrix[n-k-1-i][k] = tmp2;
-
-                matrix[k][i] = tmp1;
+        for(int i = 0; i < matrix.length; i++){
+            for(int j = 0; j < matrix[i].length; j++){
+                newMatrix[j][matrix.length-i-1] = matrix[i][j];
             }
         }
+
+        for(int i = 0; i < matrix.length; i++){
+            for(int j = 0; j < matrix[i].length; j++){
+                matrix[i][j] = newMatrix[i][j];
+            }
+        }
+
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
