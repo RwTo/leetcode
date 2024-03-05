@@ -44,10 +44,10 @@ import java.util.List;
 /**
     @author: renmw
     @date: 2024-01-11 15:50:45
-    @title: Set Matrix Zeroes
+    @title: 矩阵置零
     @questionId: 73
- 1. 使用标记数组，标记哪些行列有0
- 2. 用第一行和第一列做标记数组
+ 1. 使用标记数组，标记哪些行列有0，两个一维数组
+ 2. 用第一行和第一列做标记数组，同时+两个标识位记录 第一行和第一列是否需要置零
 **/
 public class  $73_SetMatrixZeroes {
     public static void main(String[] args) {

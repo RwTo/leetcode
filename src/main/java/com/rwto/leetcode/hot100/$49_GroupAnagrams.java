@@ -36,6 +36,9 @@ import java.util.*;
     @date: 2024-01-09 10:30:07
     @title: 字母异位词分组
     @questionId: 49
+    判断异位词  -> 1. int[26] 记录字母出现的频率  2. 排序判断
+    Map<String,List<>>
+    key 为 sort(" ")
 **/
 public class  $49_GroupAnagrams {
     public static void main(String[] args) {

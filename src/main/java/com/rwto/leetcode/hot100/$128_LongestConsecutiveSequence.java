@@ -40,6 +40,9 @@ import java.util.Set;
     @date: 2024-01-09 12:21:23
     @title: 最长连续序列
     @questionId: 128
+    不能排序  -> 空间换时间  -> map记录元素 位置
+    一次遍历找到没有比当前值大1的值
+    while 找最小值，记录长度
 **/
 public class  $128_LongestConsecutiveSequence {
     public static void main(String[] args) {

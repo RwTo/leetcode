@@ -54,6 +54,8 @@ import java.util.Map;
     @date: 2024-01-09 10:04:37
     @title: 两数之和
     @questionId: 1
+    1. 暴力
+    2. Map存储 key 为 a[i] value 为 i
 **/
 public class  $1_TwoSum {
     public static void main(String[] args) {

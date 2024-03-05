@@ -56,8 +56,15 @@ import java.util.stream.Collectors;
 /**
     @author: renmw
     @date: 2024-01-10 14:53:31
-    @title: 3Sum
+    @title: 三数之和
     @questionId: 15
+    和为 0 -> 排序， 负数，0 正数
+    排序，
+    遍历去重，找到第一个小于0的值
+    双指针找第二，三个值
+    left = a +1
+    right = n - 1
+    判断向左还是向右，注意去重！
 **/
 public class  $15_ThreeSum {
     public static void main(String[] args) {

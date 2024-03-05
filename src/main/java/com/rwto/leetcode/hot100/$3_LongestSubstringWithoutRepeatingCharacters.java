@@ -49,8 +49,15 @@ import java.util.Map;
 /**
     @author: renmw
     @date: 2024-01-10 17:51:17
-    @title: Longest Substring Without Repeating Characters
+    @title: 不重复字符的最长子字符串
     @questionId: 3
+    字串 -> 连续  -> 双指针 / 滑动窗口
+    while
+        右指针移动
+        判断元素是否在Map集合中
+        如果有：左指针移动 Map.get()+1
+        取最大值
+        存入Map
 **/
 public class  $3_LongestSubstringWithoutRepeatingCharacters {
     public static void main(String[] args) {

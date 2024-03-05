@@ -36,6 +36,8 @@ import java.util.stream.Collectors;
     @date: 2024-01-09 12:45:49
     @title: 移动零
     @questionId: 283
+   1. for循环，将不为0的前置
+   2. 双指针，x 找 为0 的位置，y找非0的位置，找到则交换
 **/
 public class  $283_MoveZeroes {
     public static void main(String[] args) {

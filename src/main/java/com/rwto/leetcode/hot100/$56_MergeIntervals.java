@@ -39,8 +39,12 @@ import java.util.List;
 /**
     @author: renmw
     @date: 2024-01-11 13:32:42
-    @title: Merge Intervals
+    @title: 合并间隔
     @questionId: 56
+    先根据第一个元素排序
+    双指针记录，开始start，结束 end
+    if end < 第二个数组的start ： 更新end 为 两者取最大
+    else 记录合并，并重置 start end
 **/
 public class  $56_MergeIntervals {
     public static void main(String[] args) {

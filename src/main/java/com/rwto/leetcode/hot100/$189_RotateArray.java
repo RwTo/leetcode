@@ -48,9 +48,10 @@ import java.util.List;
 /**
     @author: renmw
     @date: 2024-01-11 14:13:50
-    @title: Rotate Array
+    @title: 旋转的数组
     @questionId: 189
-    模拟旋转
+    1. k取余，模拟旋转
+    2. 辅助数组 记录要旋转的k取余个数组
 **/
 public class  $189_RotateArray {
     public static void main(String[] args) {

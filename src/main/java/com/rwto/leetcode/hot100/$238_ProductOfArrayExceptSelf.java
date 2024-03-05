@@ -33,8 +33,9 @@ import java.util.List;
 /**
     @author: renmw
     @date: 2024-01-11 15:28:22
-    @title: Product of Array Except Self
+    @title: 除自己的乘积
     @questionId: 238
+    前缀乘积 和 后缀乘积
 **/
 public class  $238_ProductOfArrayExceptSelf {
     public static void main(String[] args) {

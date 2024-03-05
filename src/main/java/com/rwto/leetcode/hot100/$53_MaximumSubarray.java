@@ -48,8 +48,12 @@ import java.util.List;
 /**
     @author: renmw
     @date: 2024-01-11 13:19:13
-    @title: Maximum Subarray
+    @title: 最大和的连续字串
     @questionId: 53
+    连续字串  -> 双指针
+    求和 -> 负数 +任何数都变小
+    当和为负数后，更新左指针
+
 **/
 public class  $53_MaximumSubarray {
     public static void main(String[] args) {

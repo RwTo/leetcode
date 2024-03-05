@@ -37,8 +37,9 @@ import java.util.List;
     @date: 2024-03-04 16:59:49
     @title: Spiral Matrix
     @questionId: 54
- 1. 有标记数组
+ 1. 有标记数组，标记是否访问，while（） list.add
  2. 内层循环 top,left right bottom
+    注意 内层为一维数组的情况
 **/
 public class  $54_SpiralMatrix {
     public static void main(String[] args) {

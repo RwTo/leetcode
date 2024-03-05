@@ -39,8 +39,11 @@ import java.util.List;
 /**
     @author: renmw
     @date: 2024-01-10 14:31:44
-    @title: Container With Most Water
+    @title: 盛水最多的容器
     @questionId: 11
+    连续 -> 双指针
+    左右指针
+    短板向内移动，才可能变大
 **/
 public class  $11_ContainerWithMostWater {
     public static void main(String[] args) {

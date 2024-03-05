@@ -46,6 +46,9 @@ import java.util.*;
     @questionId: 438
     子串  ->  滑动窗口  右边一直动，寻找左边界改变时机
     连续  ->  双指针
+    异位词 -> new int[26]
+    先找到固定的窗口，记录当前窗口保存的单词
+    右边移动一位，左边也移动一位，同时修改 窗口中 字符出现的频率 int[]
 **/
 public class  $438_FindAllAnagramsInAString {
     public static void main(String[] args) {

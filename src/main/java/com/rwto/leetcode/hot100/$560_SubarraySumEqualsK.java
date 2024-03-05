@@ -32,9 +32,12 @@ import java.util.Map;
 /**
     @author: renmw
     @date: 2024-01-11 10:30:19
-    @title: Subarray Sum Equals K
+    @title: 子数组Sum等于K
     @questionId: 560
     连续  -> 双指针
+ 1. 暴力
+ 2. 前缀和，前缀和A-前缀和B = K 表示 A-B的范围存在 和为K
+    注意 A = K的情况
 **/
 public class  $560_SubarraySumEqualsK {
     public static void main(String[] args) {
