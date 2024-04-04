@@ -60,6 +60,17 @@ import java.util.List;
     @date: 2024-03-05 15:46:56
     @title: Linked List Cycle II
     @questionId: 142
+    1. 方法1：使用set，遍历元素，第一个已经遍历过的就是环入口
+    2. 方法2：证明
+       假设 头到环入口 的距离为a，环长b。
+       快慢指针一定会相遇，相遇时  快指针走了 f，慢指针走了  s
+       f = 2s
+       快指针一定在环内相遇，f一定比s多走了 nb距离，f = s + nb
+       所以  s = nb 即 s 一共走了 n倍的b距离
+       当一个指针走了 a+xb ，x为0到正无穷，指针的位置一定是 环入口
+      而当快慢指针相遇时，s = nb 所以再走a步，慢指针就到了环入口
+      所以当慢指针相遇后，快指针从头开始走，当他们都走a步，相遇，即到了环入口
+
 **/
 public class  $142_LinkedListCycleIi {
     public static void main(String[] args) {
