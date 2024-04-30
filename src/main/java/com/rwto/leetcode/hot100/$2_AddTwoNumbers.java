@@ -45,7 +45,7 @@ import com.rwto.leetcode.utils.ListNode;
 /**
     @author: renmw
     @date: 2024-04-07 09:43:25
-    @title: Add Two Numbers
+    @title: Add Two Numbers 两数相加
     @questionId: 2
 **/
 public class $2_AddTwoNumbers {

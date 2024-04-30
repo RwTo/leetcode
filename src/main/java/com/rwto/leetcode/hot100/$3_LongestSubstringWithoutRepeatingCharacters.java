@@ -62,11 +62,11 @@ import java.util.Map;
 public class  $3_LongestSubstringWithoutRepeatingCharacters {
     public static void main(String[] args) {
         Solution solution = new $3_LongestSubstringWithoutRepeatingCharacters().new Solution();
-        System.out.println(solution.lengthOfLongestSubstring("bbbbb"));
-        System.out.println(solution.lengthOfLongestSubstring("pwwkew"));
-        System.out.println(solution.lengthOfLongestSubstring("abcabcbb"));
+        //System.out.println(solution.lengthOfLongestSubstring("bbbbb"));
+        //System.out.println(solution.lengthOfLongestSubstring("pwwkew"));
+        //System.out.println(solution.lengthOfLongestSubstring("abcabcbb"));
         System.out.println(solution.lengthOfLongestSubstring("abba"));
-        System.out.println(solution.lengthOfLongestSubstring("abad"));
+        //System.out.println(solution.lengthOfLongestSubstring("abad"));
     }
     
 //leetcode submit region begin(Prohibit modification and deletion)
